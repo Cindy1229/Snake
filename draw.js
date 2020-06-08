@@ -21,9 +21,15 @@ var snake;
   //Redraw the canvas every 250 miliseconds
   window.setInterval(()=>{
     ctx.clearRect(0,0,canvas.width, canvas.height);
-    apple.draw();
     snake.update();
     snake.draw();
+    apple.draw();
+
+    //When the snake collides with the Apple
+    if(snake.eat(apple)){
+      //Reset the apple's location
+      apple.pickLocation();
+    }
   }, 250)
 }());
 

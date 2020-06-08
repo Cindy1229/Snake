@@ -10,7 +10,7 @@ function Apple () {
   }
 
   this.draw=function() {
-    ctx.fillStyle="#4cafab";
+    ctx.fillStyle="#e3342f";
     ctx.fillRect(this.x, this.y, scale, scale);
   }
 }
