@@ -3,7 +3,7 @@ function Snake () {
   this.y=0;
 
   this.draw=function () {
-    ctx.fillStyle="#FFFFF";
+    ctx.fillStyle = "#FFFFFF";
     ctx.fillRect(this.x, this.y, scale, scale);
   }
 }
