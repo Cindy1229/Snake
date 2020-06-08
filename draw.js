@@ -30,6 +30,10 @@ var snake;
       //Reset the apple's location
       apple.pickLocation();
     }
+
+    //Check if snake has collided with itself
+    snake.checkCollision();
+    document.querySelector('.score').innerText='SCORE: '+snake.total;
   }, 250)
 }());
 
